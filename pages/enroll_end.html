@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#0f223c">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width"/>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=0, width=device-width"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../resources/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../resources/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../resources/favicon/favicon-16x16.png">
@@ -11,15 +11,15 @@
     <link rel="mask-icon" href="../resources/favicon/safari-pinned-tab.svg" color="#0f223c">
     <meta name="msapplication-TileColor" content="#0f223c">
     <meta name="msapplication-config" content="../resources/favicon/browserconfig.xml">
-    <meta property="og:title" content="컴퓨터 과학부 갤러리">
-    <meta property="og:url" content="https://2023shscsclub.github.io/pages/introduce.html">
+    <meta property="og:title" content="지원하기">
+    <meta property="og:url" content="https://2023shscsclub.github.io/pages/enroll.html">
     <meta property="og:image" content="https://github.com/2023shscsclub/2023shscsclub.github.io/blob/main/resources/clublogo.png?raw=true">
-    <meta property="og:description" content="2023년 서울고등학교 컴퓨터 과학부 사진 갤러리">
-    <title>컴퓨터 과학부 갤러리</title>
+    <meta property="og:description" content="2023년 서울고등학교 컴퓨터 과학부 지원하기">
+    <title>컴퓨터 과학부 지원하기</title>
     <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/style.css"/>
     <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/mstyle.css">
-    <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/gallery.css"/>
-    <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/mgallery.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/enroll.css"/>
+    <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/menroll.css">
 </head>
 <body>
     <div class="menubar">
@@ -29,22 +29,15 @@
     </div>
     <div class="title">
         <img class="background" src="../resources/groupphoto.jpeg"/>
-        <h1 id="title">갤러리</h1>
+        <h1 id="title">지원하기</h1>
     </div>
-    <div class="mainimage">
-        <div class="images">
-            <img class="slide" id="first" src="../resources/groupphoto.jpeg">
-            <img class="slide" id="second" src="../resources/working1.jpeg">
-            <img class="slide" id="third" src="../resources/working2.jpeg">
-            <button id="imgeasteregg" onclick="easteregg2()"><img class="slide" id="forth" src="../resources/easteregg.jpeg"></button>
-        </div>
-        <button id="slidebuttonleft" onclick="previous()"><</button>
-        <button id="slidebuttonright" onclick="next()">></button>
-        <ul class="slide_pagination"></ul>
+    <div class="enroll">
+        <h2 style="text-align: center">컴퓨터 과학부 지원이 마감되었습니다!</h2>
+        <h3 style="text-align: center">기타 문의사항은 기장 휴대전화(<a href="tel:010-8343-7423" id="chieftel">010-8343-7423</a>)로 연락해주세요.</h3>
     </div>
     <div class="end">
         <div class="team">
-            <button id="easteregg" onclick="on_click()">서울고등학교 컴퓨터 과학부 © 2023</button>
+            <button id="easteregg" onclick="on_click()">서울고등학교 컴퓨터 과학부 © 2023 helped by AS202002</button>
         </div>
         <div class="bonobono">
             <img class="bonobono_image" src="../resources/easteregg2.png">
@@ -56,9 +49,11 @@
             <a class="contacta" href="mailto:seoulcsclub@gmail.com" id="email"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg"/></a>
         </div>
     </div>
-    <script src="../src/imageslide.js"></script>
-    <script src="../src/easteregg.js"></script>
+    <script src="../src/submit.js"></script>
     <script src="../src/enrollcookie.js"></script>
+    <script src="../src/easteregg.js"></script>
+    <script src="../src/textcount.js"></script>
+    <script src="../src/inputcheck.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 </body>
 </html>
